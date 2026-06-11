@@ -199,6 +199,51 @@ section h2::after {
     color: var(--text-muted);
 }
 
+/* ── Projects ────────────────────────────────────────────────── */
+#projects {
+    border-bottom: 1px solid var(--border);
+}
+#projects .section-copy {
+    color: var(--text-muted);
+    max-width: 680px;
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+}
+.project-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+.project-card:hover {
+    border-color: var(--accent);
+    background: rgba(240,168,72,0.08);
+    transform: translateY(-4px);
+}
+.project-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+.project-card p {
+    color: var(--text-muted);
+    margin-bottom: 1.15rem;
+    line-height: 1.7;
+}
+.project-link {
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.project-link:hover { text-decoration: underline; }
+
 /* ── Contact ─────────────────────────────────────────────────── */
 #contact { border-bottom: 1px solid var(--border); }
 #contact-form {
