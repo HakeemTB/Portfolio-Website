@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hakeem — Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <!--
+    ┌─────────────────────────────────────────────────────────────────┐
+    │  Google Fonts — Space Grotesk (display/headings) +              │
+    │                  Inter (body)                                   │
+    │  Feel free to self-host these once you go live.                 │
+    └─────────────────────────────────────────────────────────────────┘
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- <link  rel='stylesheet' href='/style.css'  type='text/css'  media='all'  /> -->
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>hakeem</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-text">
+        <p class="hero-eyebrow">// full-stack in progress</p>
+        <h2>Hi, I'm Hakeem<span class="cursor" aria-hidden="true"></span></h2>
+        <p>Just a guy exploring technology — figuring it out while building scalable, user-friendly applications one commit at a time.</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/hakeem.png" alt="Hakeem">
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Developing into a full-stack developer while exploring and implementing AI. Building expertise in JavaScript, React, Node.js, and Python. Passionate about using technology to solve real-world problems.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills I'm Developing</h2>
+      <div class="skills-grid">
+        <div class="skill"><i class="fab fa-js"></i><h3>JavaScript</h3></div>
+        <div class="skill"><i class="fab fa-react"></i><h3>React</h3></div>
+        <div class="skill"><i class="fab fa-node"></i><h3>Node.js</h3></div>
+        <div class="skill"><i class="fab fa-python"></i><h3>Python</h3></div>
+        <div class="skill"><i class="fas fa-database"></i><h3>SQL</h3></div>
+        <div class="skill"><i class="fab fa-git-alt"></i><h3>Git</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form" novalidate>
+        <input type="text"  name="name"    placeholder="Your Name"    required>
+        <input type="email" name="email"   placeholder="Your Email"   required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Hakeem. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!--
+    EmailJS SDK — must come BEFORE contact_form.js
+    https://www.emailjs.com/docs/sdk/installation/
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="contact_form.js"></script>
+</body>
+</html>
